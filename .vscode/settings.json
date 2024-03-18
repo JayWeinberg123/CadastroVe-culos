@@ -1,0 +1,6 @@
+{
+    "iis.configDir": "",
+    "wts.enableCorePreviewMode": true,
+    "dotnetAcquisitionExtension.enablePreviewFeatures": true,
+    "editor.defaultFormatter": "ms-dotnettools.vscode-dotnet-runtime"
+}

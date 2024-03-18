@@ -1,0 +1,76 @@
+@{
+    ViewData["Title"] = "Cadastrar Veículo";
+}
+
+<div class="text-center">
+
+
+
+<h1 class="display-2">Cadastrar Veículo</h1>
+
+
+
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="placa">Placa</label>
+    <input type="text" class="form-control" placeholder="Digite a placa do veículo">
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="renavam">Renavam</label>
+    <input type="text" class="form-control" placeholder="Digite o renavam do veículo">
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="chassi">Chassi</label>
+    <input type="text" class="form-control" placeholder="Digite o chassi do veículo">
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="motor">Motor</label>
+    <input type="text" class="form-control" placeholder="Digite o Motor do veículo">
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="marca/modelo">Marca/Modelo</label>
+    <input type="text" class="form-control" placeholder="Digite a Marca/Modelo do veículo">
+    <small  class="form-text text-muted">Por exemplo: FIAT/PALIO SPORT 1.6 DL </small>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="combustivel">Tipo de Combustível</label>
+    <!-- <input type="text" class="form-control" placeholder="Digite o tipo de combustível do veículo"> -->
+    <select id="combustivel" name="combustivel">Selecione o Tipo de Combustível</select>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="cor">Cor</label>
+    <!--<input type="text" class="form-control" placeholder="Digite a cor do veículo"> -->
+    <select id="Cor" name="Cor">Selecione uma cor</select>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="ano">Ano de Fabricação</label>
+    <input type="number" class="form-control" placeholder="Digite o ano do veículo">
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="status">Status</label>
+    <input type="text" class="form-control" placeholder="Digite o status do veículo">
+    <small  class="form-text text-muted">Se o veículo está ATIVO ou INATIVO </small>
+  </div>
+
+  </br>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <a class="btn btn-secondary" asp-controller="Cadastro" asp-action="Index" role="button">Voltar</a>
+</form>
